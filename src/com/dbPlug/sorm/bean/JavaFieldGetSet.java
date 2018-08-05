@@ -2,8 +2,6 @@ package com.dbPlug.sorm.bean;
 
 /**
  * 封装了java属性和get、set方法的源代码
- * @author gaoqi
- *
  */
 public class JavaFieldGetSet {
 	/**

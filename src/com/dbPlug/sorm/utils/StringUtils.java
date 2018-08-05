@@ -2,7 +2,6 @@ package com.dbPlug.sorm.utils;
 
 /**
  * 封装了字符串常用的操作
- * @author gaoqi www.sxt.cn
  *
  */
 public class StringUtils {

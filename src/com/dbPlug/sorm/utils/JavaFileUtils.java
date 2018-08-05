@@ -18,7 +18,6 @@ import com.dbPlug.sorm.core.TypeConvertor;
 
 /**
  * 封装了生成Java文件(源代码)常用的操作
- * @author gaoqi www.sxt.cn
  *
  */
 public class JavaFileUtils {

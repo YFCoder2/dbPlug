@@ -2,7 +2,6 @@ package com.dbPlug.sorm.bean;
 
 /**
  * 管理配置信息
- * @author gaoqi www.sxt.cn
  *
  */
 public class Configuration {

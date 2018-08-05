@@ -3,11 +3,7 @@ package com.dbPlug.sorm.utils;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-/**
- * 封装了JDBC查询常用的操作
- * @author gaoqi www.sxt.cn
- *
- */
+
 public class JDBCUtils {
 	
 	/**

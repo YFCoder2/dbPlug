@@ -4,7 +4,6 @@ import java.util.List;
 
 /**
  * 负责查询（对外提供服务的核心类）
- * @author gaoqi ww.sxt.cn
  *
  */
 public interface Query {

@@ -6,7 +6,6 @@ import java.util.Map;
 
 /**
  * 存储表结构的信息
- * @author gaoqi 
  *
  */
 public class TableInfo {

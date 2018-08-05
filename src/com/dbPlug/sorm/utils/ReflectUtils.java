@@ -4,7 +4,6 @@ import java.lang.reflect.Method;
 
 /**
  * 封装了反射常用的操作
- * @author gaoqi www.sxt.cn
  *
  */
 public class ReflectUtils {

@@ -2,7 +2,6 @@ package com.dbPlug.sorm.bean;
 
 /**
  * 封装表中一个字段的信息
- * @author gaoiqi www.sxt.cn
  * @version 0.8
  */
 public class ColumnInfo {

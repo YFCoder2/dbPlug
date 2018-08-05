@@ -2,7 +2,6 @@ package com.dbPlug.sorm.core;
 
 /**
  * mysql数据类型和java数据类型的转换
- * @author gaoqi
  *
  */
 public class MySqlTypeConvertor implements TypeConvertor {

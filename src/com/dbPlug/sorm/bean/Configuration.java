@@ -33,8 +33,16 @@ public class Configuration {
 	 * 扫描生成java类的包(po的意思是：Persistence object持久化对象)
 	 */
 	private String poPackage;
-
+	/**
+	 * 基础的基础包名
+	 */
 	private String baseModelPackage;
+	/**
+	 * 要实现的表名
+	 */
+	private String tableName;
+
+
 
 
 
@@ -42,7 +50,7 @@ public class Configuration {
 	}
 	
 	public Configuration(String driver, String url, String user, String pwd,
-			String usingDB, String srcPath, String poPackage,String baseModelPackage) {
+			String usingDB, String srcPath, String poPackage,String baseModelPackage,String tableName) {
 		super();
 		this.driver = driver;
 		this.url = url;
@@ -52,6 +60,7 @@ public class Configuration {
 		this.srcPath = srcPath;
 		this.poPackage = poPackage;
 		this.baseModelPackage = baseModelPackage;
+		this.tableName = tableName;
 	}
 
 
@@ -105,5 +114,13 @@ public class Configuration {
 
 	public void setBaseModelPackage(String baseModelPackage) {
 		this.baseModelPackage = baseModelPackage;
+	}
+
+	public String getTableName() {
+		return tableName;
+	}
+
+	public void setTableName(String tableName) {
+		this.tableName = tableName;
 	}
 }

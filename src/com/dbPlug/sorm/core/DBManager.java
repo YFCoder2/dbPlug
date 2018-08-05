@@ -34,7 +34,8 @@ public class DBManager {
 		conf.setUrl(pros.getProperty("url"));
 		conf.setUser(pros.getProperty("user"));
 		conf.setUsingDB(pros.getProperty("usingDB"));
-		conf.setBaseModelPackage("baseModelPackage");
+		conf.setBaseModelPackage(pros.getProperty("baseModelPackage"));
+		conf.setTableName(pros.getProperty("tableName"));
 	}
 	
 	public static Connection getConn(){

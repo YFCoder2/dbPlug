@@ -83,7 +83,7 @@ public class TableContext {
 	public static void updateJavaPOFile(){
 		Map<String,TableInfo> map = TableContext.tables;
 		for(TableInfo t:map.values()){
-			JavaFileUtils.createJavaPOFile(t,new MySqlTypeConvertor());
+		   //	JavaFileUtils.createJavaPOFile(t,new MySqlTypeConvertor());
 		}	
 	}
 	

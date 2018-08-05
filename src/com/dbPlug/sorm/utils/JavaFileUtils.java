@@ -9,6 +9,7 @@ import java.util.List;
 import java.util.Map;
 
 import com.dbPlug.sorm.bean.ColumnInfo;
+import com.dbPlug.sorm.bean.Configuration;
 import com.dbPlug.sorm.bean.JavaFieldGetSet;
 import com.dbPlug.sorm.bean.TableInfo;
 import com.dbPlug.sorm.core.DBManager;
@@ -131,13 +132,13 @@ public class JavaFileUtils {
 	
 	
 	public static void main(String[] args) {
-//		ColumnInfo ci = new ColumnInfo("id", "int", 0);
-//		JavaFieldGetSet f = createFieldGetSetSRC(ci,new MySqlTypeConvertor());
-//		System.out.println(f);
-		
+
+		Configuration configuration = DBManager.getConf();
 		Map<String,TableInfo> map = TableContext.tables;
 		for(TableInfo t:map.values()){
-			createJavaPOFile(t,new MySqlTypeConvertor());
+			if (t.getTname().equals(configuration.getTableName())) {
+				createJavaPOFile(t, new MySqlTypeConvertor());
+			}
 		}
 	}
 	

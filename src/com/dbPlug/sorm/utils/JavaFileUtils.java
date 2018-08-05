@@ -78,7 +78,7 @@ public class JavaFileUtils {
 		src.append("import "+DBManager.getConf().getBaseModelPackage()+";\n\n");
 
 		//生成类声明语句
-		src.append("public class "+StringUtils.firstChar2UpperCase(tableInfo.getTname()+"extends BaseModel " )+" {\n\n");
+		src.append("public class "+StringUtils.firstChar2UpperCase(tableInfo.getTname()+" extends BaseModel " )+" {\n\n");
 		
 		//生成属性列表
 		for(JavaFieldGetSet f:javaFields){
